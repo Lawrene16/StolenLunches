@@ -1,0 +1,38 @@
+<ion-content>
+
+  <div class="topcover">
+    <div>
+      <ion-grid>
+        <ion-row>
+          <ion-col routerLink="/home" routerDirection="backward"  size="2" style="text-align: center">
+            <ion-icon style="font-size: 25px; color: white; margin-top: 15px" name="arrow-back"></ion-icon>
+          </ion-col>
+          <ion-col size="8">
+            <p align=center style="font-size: 18px; color:white"><b>PRAYER REQUEST</b></p>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </div>
+
+    <p align="center"><img src="../../assets/iconsandbackgrounds/request2.png" height="120"><br><br><b style="text-align: center; color: white; font-size: 19px">Submit a  <br>Prayer Request</b></p>
+
+  </div>
+
+
+  <div padding>
+
+    <ion-item style="margin-top: 20px" lines="none" class="each_item">
+      <img src="../../assets/iconsandbackgrounds/comment.png" style="margin-right: 15px; zoom: 36%;">
+      <ion-label style="opacity: 0.7; margin-left: 8px;">Comments</ion-label>
+    </ion-item>
+
+
+    <ion-item>
+      <textarea #myInput id="myInput" rows="1" maxLength="500" (keyup)="resize()" [(ngModel)]="prayer"></textarea>
+    </ion-item>
+    
+    <br>
+    <ion-button expand="block" (click)="sendRequest()">SEND</ion-button>
+
+  </div>
+</ion-content>

@@ -1,0 +1,7 @@
+{
+  "name": "stolen-lunch",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "angular"
+}

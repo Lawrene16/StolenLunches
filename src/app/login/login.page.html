@@ -1,0 +1,43 @@
+<ion-content>
+
+  <div class="topcover">
+    <div>
+      <ion-grid>
+        <ion-row>
+          <ion-col (click)="gotoregister()" size="2" style="text-align: center">
+            <ion-icon style="font-size: 25px; color: white; margin-top: 15px" name="arrow-back"></ion-icon>
+          </ion-col>
+          <ion-col size="8">
+            <p align=center style="font-size: 18px; color:white">LOGIN</p>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </div>
+
+    <p align="center"><img src="../../assets/iconsandbackgrounds/iconn.png" height="120"><br><br><b style="text-align: center; color: white; font-size: 18px">Please login to your <br>account</b></p>
+
+  </div>
+
+
+  <div padding>
+
+    <ion-item class="each_item">
+      <img src="../../assets/iconsandbackgrounds/User.png" style="margin-right: 15px; zoom: 70%;">
+      <ion-input type="text" [(ngModel)]="email" placeholder="User Name"></ion-input>
+    </ion-item>
+
+
+    <ion-item class="each_item">
+      <img src="../../assets/iconsandbackgrounds/Password.png" style="margin-right: 15px; zoom: 70%;">
+      <ion-input type="password" [(ngModel)]="password" placeholder="Password"></ion-input>
+    </ion-item>
+
+    <p class="tna" align=center>Terms and Agreement</p>
+
+    <ion-button expand="block" (click)="login()">LOGIN</ion-button>
+
+    <p routerLink="/register" routerDirection="forward"  class="tna" style="margin-top: 20px" align=center>Dont have an account?<b
+        style="font-size: 14px; margin-left: 5px">Register Now</b></p>
+
+  </div>
+</ion-content>

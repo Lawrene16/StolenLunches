@@ -1,0 +1,56 @@
+<ion-content>
+      <div class="topdiv">
+          <img class="topimg" src="../../assets/iconsandbackgrounds/curve background.png">
+      </div>
+    
+      <div class="toolbargrid">
+        <div class="bits" routerLink="/home" routerDirection="backward">
+          <ion-icon height="45" style="font-size: 25px; color: white; margin-top: 10px; margin-left: 15px"
+          name="arrow-back"></ion-icon>
+        </div>
+    
+        <div class="bits" style="text-align: center">
+          <b style="font-size: 18px; color:white; margin-top: 15px; position: absolute; right: 33vw">BIBLE STUDY</b>
+        </div>
+    
+        <div class="bits">
+        </div>
+      </div>
+
+      <ion-searchbar padding animated="true" placeholder="Search..."></ion-searchbar>
+
+      <ion-item style="margin-right: 10px" lines="none">
+        <p style="font-size: 18px; opacity: 0.8; font-family: Arial, Helvetica, sans-serif">23 Items</p>
+        <ion-icon style="opacity: 0.7;" name="md-funnel" slot="end"></ion-icon>
+        <p style="width: 50px; margin-left: 5px; font-size: 15px; opacity: 0.7;" slot="end">Sort by</p>
+      </ion-item>
+
+      <ion-card (click)="viewstudy()" class="eachcard" *ngFor="let study of studies">
+        <div style="height: 140px; background-color: black">
+            <ion-icon  style="font-size: 32px; float: right; padding: 10px" color="light" name="ios-more"></ion-icon>
+
+            <div style="padding-left: 10px; padding-top: 100px">
+                <div style="height: 25px; padding-top: 2.5px; background-color: rgb(255, 255, 255, 0.2); color: white; text-align: center; width: 60px; margin-left: 10px; border-radius: 20px; border:0.5px solid white">
+                    Live
+                </div>
+            </div>
+
+
+            
+        </div>
+
+        <div style="height: 60px">
+            <ion-item lines="none">
+                <p style="font-size: 18px; opacity: 0.8; font-family: Arial, Helvetica, sans-serif">Verse endings</p>
+                <ion-icon style="opacity: 0.8; font-size: 28px;" name="ios-add-circle-outline" slot="end"></ion-icon>
+                <ion-chip slot="end" style="background-color: white; margin-left: 8px; height: 26px; border-radius: 20px; border:0.5px solid rgb(0, 0, 0, 0.7)">
+                    <ion-icon style="color: red" name="heart" ></ion-icon>
+                    <ion-label  style="opacity: 0.8">57</ion-label>
+                  </ion-chip>
+              </ion-item>
+        </div>
+
+      </ion-card>
+
+      <br>
+</ion-content>

@@ -1,0 +1,35 @@
+.topdiv {
+    height: 23vh;
+    overflow: hidden;
+}
+
+.bottomdiv{
+    height: 77vh;
+}
+
+.topimg {
+    position: absolute;
+}
+
+.toolbargrid{
+    position: absolute;
+    z-index: 5;
+    top: 0.5vh;
+    width: 100%;
+}
+
+.bits{
+    float: left;
+    height: 60px;
+    width: 32%;
+}
+
+.eachcard{
+height: 240px;
+margin: 15px;
+border-radius: 10px;
+}
+
+.eachcomment{
+    --ion-background-color: rgb(233,233,233);
+ }

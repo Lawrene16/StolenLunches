@@ -1,0 +1,29 @@
+.topcover{
+    height: 55vh;
+    background-image: url('../../assets/iconsandbackgrounds/backg.png');
+        
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.secondlayer{
+    position: absolute;
+    text-align: center;
+    top: 0;
+    width: 100%;
+    height: 100%;
+
+}
+
+#myInput {
+    width: calc(100% - 10px);
+    border: 0;
+    border-radius: 0;
+    font-size: 16px;
+    
+    background: transparent;
+}
+
+.each_item{
+    margin-bottom: 20px;
+}

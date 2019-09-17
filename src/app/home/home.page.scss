@@ -1,0 +1,55 @@
+.topdiv {
+    height: 25vh;
+    overflow: hidden;
+}
+
+.bottomdiv{
+    height: 75vh;
+}
+
+.myvertical{
+    height: 67vh;
+    top: 30vh;
+    left: 50vw;
+    background-color: black;
+    position: absolute;
+    width: 1px;    
+    opacity: 0.15;
+}
+
+.myhorizontal{
+    width: 90vw;
+    background-color: black;
+    position: absolute;
+    // height: 10px;
+    top: 60vh;
+    left: 5vw;
+    height: 1px;
+    opacity: 0.15;
+}
+
+.topimg {
+    position: absolute;
+    // top: 3.5vh;
+    // transform: translateY(-80%);
+}
+
+// .mydivs
+
+.iconstoclick{
+    width: 100%;
+    height: 75vh;
+}
+
+.toolbargrid{
+    position: absolute;
+    z-index: 5;
+    top: 1.2vh;
+    width: 100%;
+}
+
+.bits{
+    float: left;
+    height: 60px;
+    width: 32%;
+}
