@@ -1,0 +1,86 @@
+<ion-content>
+  <div class="topdiv">
+    <img class="topimg" src="../../assets/iconsandbackgrounds/curve background.png">
+  </div>
+
+  <div class="toolbargrid">
+    <div class="bits" routerLink="/donate" routerDirection="backward">
+      <ion-icon height="45" style="font-size: 25px; color: white; margin-top: 10px; margin-left: 15px"
+        name="arrow-back"></ion-icon>
+    </div>
+
+    <div class="bits" style="text-align: center">
+      <b style="font-size: 18px; color:white; margin-top: 15px; position: absolute; right: 29vw">SELECT METHOD</b>
+    </div>
+
+    <div class="bits">
+    </div>
+  </div>
+
+  <div style="width: 100vw;">
+
+    <p style="margin: 0px;" align="center">
+      <img height="95px" src="../../assets/iconsandbackgrounds/paymethod.png">
+    </p>
+
+    <br>
+    <p style="margin:0px; font-weight: 700; opacity: 0.8; font-size: 22px;" align="center">Select Payment Method</p>
+    <br>
+
+
+    <div style="margin-left: 22px; margin-top: 10px; font-weight: 500; opacity: 0.7;">By Paypal</div>
+      <ion-card>
+        <ion-grid>
+          <ion-row style="padding-top: 8px; padding-bottom: 8px;">
+            <ion-col size="0.5">
+            </ion-col>
+            <ion-col size="1">
+              <ion-radio mode="md"></ion-radio>
+            </ion-col>
+            <ion-col size="0.2">
+            </ion-col>
+            <ion-col size="3.8">
+              <img height="30px" src="../../assets/iconsandbackgrounds/paypal2.png">
+            </ion-col>
+          </ion-row>
+        </ion-grid>
+      </ion-card>
+
+
+
+    <br>
+
+    <div style="margin-left: 22px; font-weight: 500; opacity: 0.7;">By Card</div>
+    <ion-card>
+      <ion-grid>
+        <ion-row style="padding-top: 8px; padding-bottom: 4px;">
+          <ion-col size="0.5">
+          </ion-col>
+          <ion-col size="1">
+            <ion-radio mode="md"></ion-radio>
+          </ion-col>
+          <ion-col size="0.2">
+          </ion-col>
+          <ion-col size="2">
+            <img height="40px" src="../../assets/iconsandbackgrounds/mastercard.png">
+          </ion-col>
+          <ion-col size="2.3">
+            <img height="45px" src="../../assets/iconsandbackgrounds/visacard.png">
+          </ion-col>
+          <ion-col size="2">
+            <img height="40px" src="../../assets/iconsandbackgrounds/aecard.png">
+          </ion-col>
+          <ion-col size="2">
+            <img height="40px" src="../../assets/iconsandbackgrounds/dcard.png">
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </ion-card>
+
+
+  </div>
+
+  <ion-button margin expand="block" (click)="makePayment()">MAKE PAYMENT</ion-button>
+
+
+</ion-content>

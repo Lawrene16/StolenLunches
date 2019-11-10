@@ -11,6 +11,8 @@ const routes: Routes = [
   { path: 'request', loadChildren: './request/request.module#RequestPageModule' },
   { path: 'biblestudy', loadChildren: './biblestudy/biblestudy.module#BiblestudyPageModule' },
   { path: 'viewstudy', loadChildren: './viewstudy/viewstudy.module#ViewstudyPageModule' },
+  { path: 'donate', loadChildren: './donate/donate.module#DonatePageModule' },
+  { path: 'selectpaymentmethod', loadChildren: './selectpaymentmethod/selectpaymentmethod.module#SelectpaymentmethodPageModule' },
 ];
 
 @NgModule({

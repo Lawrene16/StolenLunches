@@ -63,7 +63,7 @@
 /******/
 /******/ 	// script path function
 /******/ 	function jsonpScriptSrc(chunkId) {
-/******/ 		return __webpack_require__.p + "" + ({"common":"common","biblestudy-biblestudy-module":"biblestudy-biblestudy-module","home-home-module":"home-home-module","login-login-module":"login-login-module","register-register-module":"register-register-module","request-request-module":"request-request-module","viewstudy-viewstudy-module":"viewstudy-viewstudy-module"}[chunkId]||chunkId) + ".js"
+/******/ 		return __webpack_require__.p + "" + ({"common":"common","biblestudy-biblestudy-module":"biblestudy-biblestudy-module","home-home-module":"home-home-module","login-login-module":"login-login-module","register-register-module":"register-register-module","donate-donate-module":"donate-donate-module","request-request-module":"request-request-module","viewstudy-viewstudy-module":"viewstudy-viewstudy-module"}[chunkId]||chunkId) + ".js"
 /******/ 	}
 /******/
 /******/ 	// The require function

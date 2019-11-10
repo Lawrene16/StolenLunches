@@ -1,0 +1,85 @@
+<ion-content>
+  <div class="topdiv">
+    <img class="topimg" src="../../assets/iconsandbackgrounds/curve background.png">
+  </div>
+
+  <div class="toolbargrid">
+    <div class="bits" routerLink="/home" routerDirection="backward">
+      <ion-icon height="45" style="font-size: 25px; color: white; margin-top: 10px; margin-left: 15px"
+        name="arrow-back"></ion-icon>
+    </div>
+
+    <div class="bits" style="text-align: center">
+      <b style="font-size: 18px; color:white; margin-top: 15px; position: absolute; right: 45vw">GIVE</b>
+    </div>
+
+    <div class="bits">
+    </div>
+  </div>
+
+  <div style="width: 100vw;">
+
+    <p style="margin: 0px;" align="center">
+      <img height="95px" src="../../assets/iconsandbackgrounds/give.png">
+    </p>
+
+    <br>
+    <p style="margin:0px; font-weight: 700; opacity: 0.8; font-size: 22px;" align="center">Make one time donation</p>
+    <p align="center" style="margin: 25px; text-align: center; opacity: 0.8; font-size: 15px;"
+      align="center; font-weight: 300">Lorem ipsum is simply dummy text of the printing and typesetting industry.</p>
+
+    <br>
+
+    <ion-grid>
+      <ion-row>
+        <ion-col style="padding-top: 28px; font-weight: 500; font-size: 17px; opacity: 0.7; padding-left: 10px;"
+          size="4">
+          I am giving
+        </ion-col>
+
+        <ion-col size="7">
+          <ion-item>
+            <ion-input [(ngModel)]="amountchosen"></ion-input>
+          </ion-item>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+
+    <br>
+
+    <ion-grid>
+      <ion-row>
+        <ion-col (click)="selectAmount(0)" size="3" style="padding: 10px;">
+          <div [style.background-color]="oneSelected ? 'black' : (!oneSelected ? 'white' : null)" 
+          [style.color]="oneSelected ? 'white' : (!oneSelected ? 'black' : null)" 
+          class="eachamount" style="border: 1px solid rgb(0, 0, 0, 0.7);"
+          >$25</div>
+        </ion-col>
+
+        <ion-col (click)="selectAmount(1)" size="3" style="padding: 10px;">
+          <div [style.background-color]="twoSelected ? 'black' : (!twoSelected ? 'white' : null)" 
+          [style.color]="twoSelected ? 'white' : (!twoSelected ? 'black' : null)" 
+          class="eachamount" style="border: 1px solid rgb(0, 0, 0, 0.7);">$50</div>
+        </ion-col>
+
+        <ion-col (click)="selectAmount(2)" size="3" style="padding: 10px;">
+          <div [style.background-color]="threeSelected ? 'black' : (!threeSelected ? 'white' : null)"
+          [style.color]="threeSelected ? 'white' : (!threeSelected ? 'black' : null)" 
+           class="eachamount" style="border: 1px solid rgb(0, 0, 0, 0.7);">$100</div>
+        </ion-col>
+
+        <ion-col (click)="selectAmount(3)" size="3" style="padding: 10px;">
+          <div [style.background-color]="fourSelected ? 'black' : (!fourSelected ? 'white' : null)"
+          [style.color]="fourSelected ? 'white' : (!fourSelected ? 'black' : null)" 
+           class="eachamount" style="border: 1px solid rgb(0, 0, 0, 0.7);">$150</div>
+        </ion-col>
+
+      </ion-row>
+    </ion-grid>
+
+  </div>
+
+  <ion-button margin expand="block" (click)="makePayment()">MAKE PAYMENT</ion-button>
+
+
+</ion-content>

@@ -438,6 +438,10 @@ var map = {
 		"./src/app/biblestudy/biblestudy.module.ts",
 		"biblestudy-biblestudy-module"
 	],
+	"./donate/donate.module": [
+		"./src/app/donate/donate.module.ts",
+		"donate-donate-module"
+	],
 	"./home/home.module": [
 		"./src/app/home/home.module.ts",
 		"common",
@@ -509,6 +513,7 @@ var routes = [
     { path: 'request', loadChildren: './request/request.module#RequestPageModule' },
     { path: 'biblestudy', loadChildren: './biblestudy/biblestudy.module#BiblestudyPageModule' },
     { path: 'viewstudy', loadChildren: './viewstudy/viewstudy.module#ViewstudyPageModule' },
+    { path: 'donate', loadChildren: './donate/donate.module#DonatePageModule' },
 ];
 var AppRoutingModule = /** @class */ (function () {
     function AppRoutingModule() {
@@ -722,7 +727,7 @@ Object(_angular_platform_browser_dynamic__WEBPACK_IMPORTED_MODULE_1__["platformB
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! /Users/villifixinc/Documents/stolen-lunch/src/main.ts */"./src/main.ts");
+module.exports = __webpack_require__(/*! /Users/villifixinc/Documents/StolenLunches/src/main.ts */"./src/main.ts");
 
 
 /***/ })
